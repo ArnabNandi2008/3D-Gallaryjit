@@ -492,7 +492,7 @@
             );
             z-index: 1;
         }
-        
+
     </style>
 </head>
 <body>
@@ -500,12 +500,33 @@
     <div class="spotlight"></div>
     <div class="stars"></div>
     <button class="nav-button prev" aria-label="Previous"></button>
-    <button class="nav-button next" aria-label="Next"></button>
+    <button class="nav-button next" aria-label="Next" onclick="rightButtonAN()"></button>
     <div class="gallery-container">
         <div class="gallery"></div>
     </div>
 
     <script>
+        console.log("Made by -")
+        console.log("         Name - Shubhajit Basak")
+        console.log("         Instagram - @subhzt")
+        console.log("         Email - shubhajitbasak45@gmail.com")
+        console.log("Edited by -")
+        console.log("         Name - Arnab Nandi")
+        console.log("         Instagram - @arnabnandi2008")
+        console.log("         Email - arnabnandi2008bqa@gmail.com")
+        r = 0;
+        function checkButtonAN() {
+            if (r >= 10) {
+                console.log("Loading MSG page")
+                window.location.href = "finalMsg/Final.html";
+            }
+        }
+        function rightButtonAN() {
+            r = r+1;
+            console.log("Right Buton pressed : "+r+" times")
+            checkButtonAN();
+        }
+
         function createStars() {
             const starsContainer = document.querySelector('.stars');
             for (let i = 0; i < 200; i++) {
@@ -667,6 +688,10 @@
         // Initialize
         createStars();
         createGallery();
+        
     </script>
+
+
+
 </body>
 </html>
